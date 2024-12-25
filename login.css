@@ -1,0 +1,90 @@
+/* Set the background image and overall page style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/0005.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create a semi-transparent background container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.7); /* White with some transparency */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(082.02px); /* Apply backdrop filter for blur effect */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title style */
+.login-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #4A90E2; /* Blue color */
+    margin-bottom: 20px;
+}
+
+/* Form input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Submit button style */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+}
+
+/* Error message style */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Account prompt and button style */
+.account-prompt {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #34C759; /* Green color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #28A745; /* Darker green on hover */
+}

@@ -1,0 +1,70 @@
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #3498db; /* Add border to the table */
+}
+
+/* Table header styling */
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 0px solid #3498db; /* Add border to table header */
+}
+
+/* Table data styling */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 1px solid #ddd; /* Add left border to cells */
+}
+
+/* Zebra-striping for rows */
+tr:nth-child(even) {
+    background-color: #f2efe1;
+}
+
+tr:nth-child(odd) {
+    background-color: #c6c0c0;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #fc9fe9;
+}
+
+/* Image styling */
+td img {
+    border-radius: 50%;
+}
+
+/* No records found message */
+.no-records {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td img {
+        width: 80px;
+    }
+}

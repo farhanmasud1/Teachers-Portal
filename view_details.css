@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    color: #037cf4;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    margin: 20px 0;
+}
+
+/* Profile Image */
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Info Styling */
+.profile-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-info strong {
+    color: #2c3e50;
+}
+
+/* User Information Table */
+.user-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #3498db; /* Border around the entire table */
+}
+
+.user-info-table th, .user-info-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Border for individual cells */
+}
+
+.user-info-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Make the label column smaller */
+.user-info-table th:nth-child(1), .user-info-table td:nth-child(1) {
+    width: 25%; /* Adjust width of the field/label column */
+    font-weight: bold; /* Make field/label column text bold */
+}
+
+/* Make the details column wider */
+.user-info-table th:nth-child(2), .user-info-table td:nth-child(2) {
+    width: 75%; /* Adjust width of the details column */
+}
+
+.user-info-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-info-table tr:hover {
+    background-color: #e1e1e1;
+}
+
+/* Education Table */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #3498db; /* Border around the entire table */
+}
+
+.education-table th, .education-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Border for individual cells */
+}
+
+.education-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.education-table tr:hover {
+    background-color: #e1e1e1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .user-info-table th, .user-info-table td, .education-table th, .education-table td {
+        font-size: 14px;
+    }
+}

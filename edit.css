@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #34ef0a); /* Pink to Blue Gradient */
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    font-weight: bold;
+    color: #2e3d8c; /* Deep Blue */
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Styling */
+form {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.01); /* Slight hover effect */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: 700;
+    color: #4b6cb7; /* Blue */
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f1f5f9; /* Light background for inputs */
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+    border-color: #4b6cb7; /* Blue on focus */
+    outline: none;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+}
+
+/* Image Upload Field */
+input[type="file"] {
+    padding: 10px;
+}
+
+/* Spacing between inputs */
+form > label, form > input {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

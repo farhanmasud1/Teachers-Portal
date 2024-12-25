@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('images/0001.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; /* Required for absolute positioning of the Admin button */
+}
+
+.admin-container {
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+.admin-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.admin-btn:hover {
+    background: #043aec;
+}
+
+.container {
+    background: rgba(249, 247, 247, 0.8); /* Added opacity to allow backdrop filter to show through */
+    width: 360px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(82px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
+}
+
+h2 {
+    text-align: center;
+    color: #6e8efb;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-btn {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+}
+
+.register-btn:hover {
+    background: #043aec;
+}
+
+.account-prompt {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #2903d1;
+}
+
+.login-btn {
+    background: #616beb;
+    color: #fbfbfc;
+    border: 1px solid #043aec;
+}
+
+.login-btn:hover {
+    background: #1804fb;
+}
+
+button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,82 @@
+/* Apply a full viewport background image */
+body {
+    background-image: url('images/0006.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the dashboard */
+.container {
+    background: rgba(221, 252, 96, 0.7); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(050px); /* Adds blur effect on background */
+}
+
+/* Header style */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #4737fb;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text style */
+p {
+    color: #fa0fb8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Links style */
+a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+    background: #f24e1e;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #40eef7;
+    transform: translateY(-3px);
+}
+
+/* Logout button style */
+.logout {
+    background-color: #ff5757;
+    font-weight: bold;
+}
+
+.logout:hover {
+    background-color: #11d1f3;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
+}
